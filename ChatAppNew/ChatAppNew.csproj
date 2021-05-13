@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>aspnet-ChatAppNew-C86A749A-9925-49D7-829F-70C4994CE207</UserSecretsId>
+    <CopyRefAssembliesToPublishDirectory>false</CopyRefAssembliesToPublishDirectory>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Data\Migrations\20210506060059_AddMesageChatToDb.cs" />
+    <Compile Remove="Data\Migrations\20210506060059_AddMesageChatToDb.Designer.cs" />
+    <Compile Remove="Data\Migrations\20210506060953_AddMesageChatToDb.cs" />
+    <Compile Remove="Data\Migrations\20210506060953_AddMesageChatToDb.Designer.cs" />
+    <Compile Remove="Data\Migrations\20210506061036_AddChatandMessageToDatabase.cs" />
+    <Compile Remove="Data\Migrations\20210506061036_AddChatandMessageToDatabase.Designer.cs" />
+    <Compile Remove="Data\Migrations\20210506061207_AddChatAndMessageToDb.cs" />
+    <Compile Remove="Data\Migrations\20210506061207_AddChatAndMessageToDb.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.2.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="3.1.13" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.13" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.13" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR" Version="1.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.13" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.13" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.1.13" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
+  </ItemGroup>
+
+</Project>

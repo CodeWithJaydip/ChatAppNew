@@ -1,0 +1,11 @@
+﻿@model IEnumerable<Users>
+@{
+    ViewData["Title"] = "Find";
+}
+
+@foreach (var user in Model)
+{
+<a asp-action="CreatePrivateRoom" asp-controller="Home" asp-route-userId="@user.Id">@user.Name</a>
+}
+
+

@@ -1,0 +1,18 @@
+﻿@model IEnumerable<Chat>
+@using System.Security.Claims
+@{
+    ViewData["Title"] = "Private";
+    var userId = User.FindFirst(ClaimTypes.NameIdentifier).Value;
+}
+
+@foreach (var user in Model)
+{
+    <a asp-action="Chat" asp-controller="Home" asp-route-id="@user.Id">
+        @user.Users.FirstOrDefault(x => x.UserId != userId).Users.Name
+    </a>
+}
+
+
+
+
+
